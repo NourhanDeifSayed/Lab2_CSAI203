@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}"
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <form action="/" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" required>
+        <label>Age:</label>
+        <small style="color: red;">Enter Postive Age</small><br>
+        <input type="number" name="age" min="1" required>
+        <label>Date of birth:</label>
+        <input type="date" name="Dateofbirth" required>
+        <input type="submit" value="submit">
+    </form>
+
+
+</body>
+</html>
